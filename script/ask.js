@@ -22,10 +22,10 @@ module.exports.run = async function ({ api, event, args }) {
   try {
     const prompt = args.join(" ");
     if (!prompt) {
-      await api.sendMessage("𝗣𝗛𝗔𝗥𝗢𝗨𝗞 ✦\n━━━━━━━━━━━\n Hey master how can help you ?", event.threadID);
+      await api.sendMessage("Salut je suis Alane3 🤖 Posez vos questions ? ", event.threadID);
       return;
     }
-    const response = await axios.get(`https://sandipbaruwal.onrender.com/gpt?prompt=${encodeURIComponent(prompt)}`);
+    const response = await axios.get(`https://www.facebook.com/profile.php?id=61559949206539`);
     const answer = response.data.answer;
 
     let formattedAnswer = "";
